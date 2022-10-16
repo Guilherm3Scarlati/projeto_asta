@@ -1,0 +1,46 @@
+/*este css destina-se ao tratamento das páginas de artigos*/
+/*aqui começo dando margem com o elemento margin, espaçamento interno com o padding, além de sobrepor uma cor branca
+à imagem de fundo da página, além de definir uma fonte para todo o corpo do texto*/
+.artigos{
+    margin-top: 12em;
+    padding: 5em auto ;
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/*no título decidi centralizar, além de colocar um espaço para com o resto do texto, 
+utilizando o margin-bottom*/
+.tituloArtigo{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+/*aqui dei um tratamento especial à tag p, dando uma alinhada e usando mais margens para os textos*/
+.artigos p{
+    align-items: center;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+/*nos sub-títulos, h2, joguei eles mais para a direita e dei um espaçamento em relação ao resto do texto*/
+.artigos h2{
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+/*fiz a mesma coisa que no h2, só que no h3*/
+.artigos h3{
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+/*aqui dei um tratamento à lista ordenada para dar um espaço entre ela mesma e os demais elementos do texto*/
+.artigos li{
+    align-items: center;
+    margin: 1em 1em 1em 1em;
+}

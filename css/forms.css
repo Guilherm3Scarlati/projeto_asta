@@ -1,0 +1,132 @@
+/*este css é para o tratamento do formulário*/
+/*começo pegando o título definindo a fonte e dando um espaçamento na esquerda do item*/
+#titulo{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin-left: 7%;
+}
+
+/*aqui peguei todos os elementos que estão dentro de uma tag fieldset e tirei a borda que as agrupa no html e as coloquei
+lado a lado*/
+fieldset{
+    border: 0;
+    display: inline-flex;
+}
+
+/*defini uma fonte para todos os elementos dentro do form, alem de dar uma cor de fundo, peguei dei margin para melhor 
+posicionar*/
+form{
+    background-color: #f0f0ff;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 1em;
+    color: #000;
+    margin-left: 16%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    justify-content: center;
+}
+
+/*aqui mexi em todos os campos com input, select e button dando uma arredondada nos seus campos*/
+input, select, button{
+    border-radius: 5px;
+}
+
+
+
+
+
+.campo input[type="text"], .campo input[type="email"], .campo select{
+    padding: 0.2em;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+
+.campo input:focus, .campo select:focus{
+    background: #f0f0ff;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: rgba(63, 132, 197, 0.9);
+    border: 0;
+    margin-bottom: 1em;
+    color: #f0f0ff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+    background: rgba(81, 159, 231, 0.9);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#divNome{
+    margin-right: 2em;
+    margin-bottom: 1.2em;
+}
+
+#divSobrenome{
+    margin-right: 2em;
+    margin-bottom: 1.2em;
+}
+
+#divEmail{
+    margin-right: 2em;
+    margin-bottom: 1.2em;
+}
+
+#divCEP{
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+}
+
+#divEndereco{
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+}
+
+#divNum{
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+}
+
+#divBairro{
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+}
+
+#divCidade{
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+}
+
+#divEstado{
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+}
+
+#divGen{
+    margin-bottom: 1em;
+    align-items: center;
+    
+}
+
+#divNasc{
+    margin-bottom: 1em;
+    align-items: center;
+    
+}

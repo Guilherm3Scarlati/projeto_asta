@@ -1,0 +1,70 @@
+/*este css é destinado ao tratamento dos textos explicativos dos cursos*/
+/*aqui joguei uma cor de fundo para sobrepor a imagem que está em todas as páginas, além de definir a 
+fonte para todo o corpo do texto e de uma margem interna e externa em relação ao resto da página e os 
+próprios elementos do texto*/
+.texto{
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin-top: 10em;
+    padding: 3em 4em 2em 4em;
+}
+
+/*aqui dei um tratamento especial para a lista ordenada, dando um espaçamento a ela em relação ao restante do itens*/
+.texto li{
+    margin-top: 1em;
+    padding: 0.2em 0 1em 0;
+}
+
+/*também decidi tratar um pouco a foto que utilizei para encaixar melhor ela no texto, diminuindo suas proporções e dando
+um espaço do resto do texto*/
+.texto img{
+    width: 60%;
+    height: 50%;
+    margin-top: 2em;
+    
+    align-items: center;
+    text-align: center;
+}
+
+/*aqui centralizei o título do texto*/
+#tituloCurso{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/*aqui começa o tratamento do footer que está sendo utilizado para mostrar formas de contato*/
+/*joguei uma outra cor para sobrepor a imagem de fundo, mas joguei um pouco de alpha nela para deixar um pouco
+"invisivel" e sua cor é próxima da cor da imagem de fundo, assim fica mais bonito visualmente, além de definir 
+a fonte que deverá ser usada em toda div footer*/
+.footer{
+    
+    background-color: rgba(63, 132, 197, 0.9);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/*alinhei o título do h4 para o centro da página*/
+.footer h4{
+    
+    text-align: center;
+    align-items: center;
+}
+
+/*peguei a lista não-ordenada e dei um espaçamento do resto dos componentes e também joguei uma ao lado da outra
+com o display: inline-flex;*/
+.footer ul{
+    margin-top: 5em;
+    margin-bottom: 2em;
+    padding: 3em auto;
+    display: inline-flex;
+    margin-right: 5em;
+    margin-left: 5em;
+    
+}
+
+/*aqui alinhei o texto introdutório ao campo que está div está ocupando*/
+.footer p{
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+}

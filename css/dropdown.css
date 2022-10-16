@@ -1,0 +1,89 @@
+/*este css é destinado para o tratamento do menu dropDown*/
+/*aqui seleciono tudo o que está dentro da página e defino suas margens externas ou internas como zero, isso
+está sendo aplicado em todas as páginas, já que o menu drop, está em todas*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu {
+    display: flex;
+    gap: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*aqui dou uma mudada na dimensão da lista ordenada e falo que não tera mais um estilo de lista, tirando os pontos que a
+deixam como "tópicos"*/
+.menu li {
+    width: 150px;
+    height: 50px;
+    list-style: none;
+}
+
+
+.menu a {
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transition: all .2s linear;
+}
+
+/*com o hover a lista ordenada irá mudar de cor ao ganhar um foco com o mouse, mudando de cor de fundo e fonte*/
+.menu li:hover>a {
+    background-color: rgb(255, 151, 31);
+    color: black;
+}
+
+/*efeito para os sub-itens "caírem"*/
+.menu li:hover>.dropdown-submenu {
+    display: block;
+}
+
+/*dando uma margem para os sub-itens de cada opção*/
+.dropdown-submenu {
+    margin-top: 1px;
+    display: none;
+}
+
+
+.dropdown-submenu a {
+    background-color: rgb(72, 121, 189);
+    width: 150%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-size: .8rem;
+    border-left: 8px solid transparent;
+}
+
+/*aqui quando o sub-item for selecionado ele irá marcar uma tarja preta ao lado do nome*/
+.dropdown-submenu li:hover>a {
+    border-left: 8px solid black;
+
+}
+
+/*resolvi colocar a imagem de fundo pelo css pois assim ficaria mais facil dar manuntenção futuramente*/
+body {
+    background-image: url("/img/fundo.png");
+    background-size: cover;
+    background-position: 0 20%;
+    /* background-image: linear-gradient(to bottom, rgb(234, 224, 233), rgba(238, 41, 189, 0.983)); degrade de cor do site*/
+    background-attachment: fixed;
+}
+
+/*definindo uma margem de 20px para o menu não grudar no começo da página e deixando um display flex para o menu ficar alinhado
+*/
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

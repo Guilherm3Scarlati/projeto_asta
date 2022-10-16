@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--tag link para chamar os efeitos do CSS-->
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/artigos.css">
+    <link rel="stylesheet" href="./css/textos.css">
+
+    <!--tag link chamando uma imagem de ícone ao lado do título da página-->
+    <link rel="icon" href="./img/fundo.png">
+
+    <!--título da página-->
+    <title>FRONT-END</title>
+</head>
+<body>
+
+    <!--Aqui é um menu em formato DropDown, que direciona para as demais páginas do site-->
+    <nav>
+        <ul class="menu">
+
+            <!--lista ordenada que leva ao menu principal-->
+            <li><a href="./index.html">Home</a></li>
+
+            <!--lista ordenada que "segura" os sub-itens Cursos-->
+            <li>
+                <a href="#">Cursos &nabla;</a>
+                <ul class="dropdown-submenu">
+
+                    <!--cada lista aqui leva ao respectivo curso que a nomeia-->
+                    <li><a href="./cursoDesenvolvimento.html">Desenvolvimento de Sistemas</a></li>
+                    <li><a href="./cursoRedes.html">Redes de Computadores</a></li>
+                    <li><a href="./cursoADM.html">Administração</a></li>
+                    <li><a href="./cursoEletro.html">Eletroeletrônica</a></li>
+                </ul>
+            </li>
+
+            <!--aqui vem uma lista ordenada que "segura" os sub-itens do Artigos-->
+            <li>
+                <a href="#">Artigos &nabla;</a>
+                <ul class="dropdown-submenu">
+
+                    <!--cada lista aqui leva ao respectivo artigo que a nomeia-->
+                    <li><a href="./artigos_front-end.html">Front-end</a></li>
+                    <li><a href="./artigos_back-end.html">Back-end</a></li>
+                    <li><a href="./artigos_design.html">Design</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <!--div resposável por "segurar" o texto de artigo-->
+    <div class="artigos">
+
+        <!--título do artigo, com um strong para destacar-->
+        <h1 class="tituloArtigo"><strong>FRONT-END</strong></h1>
+
+        <!--aqui começa o texto-->
+        <p>
+            <!--utilizei o h2 para inserir um sub-título antes de começar o texto, e um strong para destacar-->
+            <h2><strong>Front-end: o que é e como funciona?</strong></h2>
+            O Front-end está muito relacionado com a interface gráfica do projeto. 
+            Ou seja, é onde se desenvolve a aplicação com a qual o usuário irá interagir diretamente, seja em softwares, sites, aplicativos, etc. 
+            Portanto, é essencial que o desenvolvedor tenha uma preocupação com a experiência do usuário.
+            Dev front-end é um termo muito utilizado para identificar profissionais que se especializaram especificamente nessa área. 
+            Além disso, apesar de envolver a interface do projeto, o programador front-end não é formado em design. 
+            A diferença entre os dois é que o desenvolvedor não desenha visualmente a interface.
+            Na verdade, no desenvolvimento front-end, o profissional irá mexer com o código em si, projetando com quais ferramentas o usuário irá interagir. 
+            Por esse motivo, é importante ter essa diferença em mente quando falamos sobre o assunto.
+            
+            <!--novamente usei o h2 com strong como sub-título-->
+            <h2><strong>Qual a importância do desenvolvimento front-end?</strong></h2>
+            Se um site ou sistema de gestão não é simples de entender ou não possui fácil usabilidade, então a aderência do usuário será menor. 
+            O papel do desenvolvimento front-end é facilitar a usabilidade e garantir que a ferramenta realmente funcione conforme o esperado.
+            Um site, por exemplo, pode perder tráfego orgânico se apresentar erros constantemente. 
+            Isso acontece pois as pessoas que visitam um site assim costumam perder a confiança na empresa que está por trás dele. 
+            Além disso, um site com erros constantes ou lentidão torna a navegação quase impossível.
+            Além disso, sites responsivos saem na frente por causa do constante aumento de tráfego vindo de dispositivos móveis. 
+            Portanto, ao utilizar linguagens front-end, é preciso ter essa questão em mente. 
+            O problema de usabilidade ruim se aplica também a softwares, afinal, é preciso que o usuário consiga entender como a ferramenta opera.
+
+            <!--novamente usei o h2 com strong como sub-título-->
+            <h2><strong>Diferença entre front-end e back-end</strong></h2>
+            Nem sempre a diferença entre front-end e back-end é muito clara. 
+            Trata-se de um assunto mais complexo, porém é essencial entender pelo menos as diferenças básicas entre os dois.
+            Podemos classificar como back-end tudo o que envolve como o projeto funciona, seja ele um site ou sistema. 
+            Ou seja, tudo o que o usuário não pode ver, como o banco de dados e também os servidores. 
+            Aqui também é onde entra a segurança, estrutura e gerenciamento de conteúdo.
+            O back-end é essencial para que tudo funcione bem e cumpra com a proposta do projeto. 
+            Um exemplo disso é um site dinâmico, que atualiza em tempo real com novas informações, como, por exemplo, um site de notícias. 
+            É preciso que seu banco de dados funcione corretamente para que o site não apresente problemas técnicos.
+            Já o front-end, como comentamos antes, é a conexão entre as funcionalidades de um sistema ou site com o usuário. 
+            Portanto, os dois são igualmente essenciais para que o produto funcione bem de modo geral e seja bem aceito pelos clientes.
+
+            <!--novamente usei o h2 com strong como sub-título-->
+            <h2><strong>Por que o front-end deve ser valorizado?</strong></h2>
+            Agora que você entende mais sobre a importância do front-end, veja a seguir os motivos pelos quais ele deve ser valorizado pelas empresas e pelos desenvolvedores:
+
+            <!--por aqui se tratar de um sub-item do sub-título, utilizei um h3 com strong-->
+            <h3><strong>Aparência</strong></h3>
+            A aparência de um site, sistema ou outro projeto do tipo é um dos fatores marcantes para o usuário, podendo ser também um dos motivos que os levam a desistir de utilizá-lo. 
+            Portanto, é importante que isso seja levando em conta no momento de desenvolver um app, site ou software.
+
+            <!--novamente um h3 que é um sub-item com strong-->
+            <h3><stong>Objetivo da empresa</stong></h3>
+            Outro fator importante que deve ser levado em conta no desenvolvimento front-end é o objetivo da empresa com aquele produto. 
+            No caso de um site, por exemplo, é preciso pensar sobre a mensagem que a companhia pretende passar ao usuário e quais suas expectativas em relação àquela página.
+
+            <!--novamente um h3 que é um sub-item com strong-->
+            <h3><strong>Segurança de usabilidade</strong></h3>
+            O front-end também é muito importante para que o usuário tenha segurança ao utilizar a ferramenta. 
+            Assim, a empresa constrói uma relação de confiança com ele e passa uma boa imagem. 
+            Se por acaso essa confiança for quebrada, a companhia pode acabar perdendo credibilidade.
+        </p>
+    </div>
+
+     <!--Aqui coloquei um rodapé contendo informações de para contato, caso queira mais informações sobre o
+        curso desejado-->
+        <div class="footer">
+
+            <!--utilizei um h4 pois não ficaria tão grande e seria chamativo o suficiente-->
+            <h4>CONTATO:</h4>
+    
+            <!--a tag p serve ao próposito que queria para este texto, e o strong da um bom destaque-->
+            <p><strong>Caso queira entrar em contato para mais informações, abaixo segue os meios necessários:</strong></p>
+    
+            <!--o ul com um número de telefone, decidi usar o ul pois não queria os pontos de uma lista ordenada e seria
+                mais fácil manipular-->
+            <ul>Telefone: (19) 2345678</ul>
+    
+            <!--Aqui utilizei a tag a para chamar um texto clicável que direciona para o aplicativo de email, 
+                ao clicar neste email que coloquei, você será direcionado para o app de email que utiliza para entrar
+                em contato-->
+            <ul>Email: <a href= "mailto: astarote@gmail.com? subject=astarote@gmail.com">astarote@gmail.com</a></ul>
+            
+        </div>
+</body>
+</html>

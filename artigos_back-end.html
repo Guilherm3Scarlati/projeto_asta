@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--tag link para chamar os efeitos do CSS-->
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/artigos.css">
+    <link rel="stylesheet" href="./css/textos.css">
+
+    <!--tag link chamando uma imagem de ícone ao lado do título da página-->
+    <link rel="icon" href="./img/fundo.png">
+
+    <!--título da página-->
+    <title>BACK-END</title>
+</head>
+<body>
+
+    <!--Aqui é um menu em formato DropDown, que direciona para as demais páginas do site-->
+    <nav>
+        <ul class="menu">
+
+            <!--lista ordenada que leva ao menu principal-->
+            <li><a href="./index.html">Home</a></li>
+
+            <!--lista ordenada que "segura" os sub-itens Cursos-->
+            <li>
+                <a href="#">Cursos &nabla;</a>
+                <ul class="dropdown-submenu">
+
+                    <!--cada lista aqui leva ao respectivo curso que a nomeia-->
+                    <li><a href="./cursoDesenvolvimento.html">Desenvolvimento de Sistemas</a></li>
+                    <li><a href="./cursoRedes.html">Redes de Computadores</a></li>
+                    <li><a href="./cursoADM.html">Administração</a></li>
+                    <li><a href="./cursoEletro.html">Eletroeletrônica</a></li>
+                </ul>
+            </li>
+
+            <!--aqui vem uma lista ordenada que "segura" os sub-itens do Artigos-->
+            <li>
+                <a href="#">Artigos &nabla;</a>
+                <ul class="dropdown-submenu">
+
+                    <!--cada lista aqui leva ao respectivo artigo que a nomeia-->
+                    <li><a href="./artigos_front-end.html">Front-end</a></li>
+                    <li><a href="./artigos_back-end.html">Back-end</a></li>
+                    <li><a href="./artigos_design.html">Design</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <!--div resposável por "segurar" o texto de artigo-->
+    <div class="artigos">
+
+        <!--título do artigo, com um strong para destacar-->
+        <h1 class="tituloArtigo"><strong>BACK-END</strong></h1>
+
+        <!--aqui começa o texto-->
+        <p>
+
+            <!--utilizei o h2 para inserir um sub-título antes de começar o texto, e um strong para destacar-->
+            <h2><strong>O Que É Back-end?</strong></h2>
+            Se você não faz ideia sobre o que é backend, saiba que é o desenvolvimento de recursos e estrutura por trás da programação, que garante a realização das ações por parte dos usuários em um computador.
+            Para você entender, tudo que está por trás de um site com uma bela interface é baseado em informações trocadas entre banco de dados e navegador, que não são visíveis pelos usuários.
+            
+            <!--novamente usei o h2 com strong como sub-título-->
+            <h2><strong>Para que serve o Backend?</strong></h2>
+            A função de um backend está relacionada com servidores, bancos de dados, segurança, estrutura, gerenciamento de conteúdo e atualizações.
+            Esse tipo de aplicação serve para tratar os dados e também é o local onde ocorrem as inserções, arquivamentos e leituras de dados, por trás de uma aplicação.
+            De forma resumida, são recursos que garantem a concretização dos processos mais simples em um ambiente eletrônico, como buscas em sites de compra ou até mesmo as ações mais complexas.
+
+            <!--novamente usei o h2 com strong como sub-título-->
+            <h2><strong>Quais as Diferenças entre Back-end e Front-end?</strong></h2>
+            É bom que fique claro que um servidor backend é diferente do front-end. 
+            O backend é a estrutura que possibilita a operação do sistema, enquanto o front-end é responsável pela parte visual, como apresentação, design, linguagens, cores, entre outros.
+            Mesmo tendo papéis diferentes, essas aplicações estão ligadas intimamente para que os ambientes eletrônicos operem em sincronia.
+
+            <!--novamente usei o h2 com strong como sub-título-->
+            <h2><strong>O que o Back-end engloba em Seu Universo?</strong></h2>
+            Agora que você entendeu do que se trata essa tecnologia, vamos conhecer como funciona o backend e os pontos que fazem a interligação dessa programação. 
+            Confira!
+
+            <!--por aqui se tratar de um sub-item do sub-título, utilizei um h3 com strong-->
+            <h3><strong>Bancos de dados e servidores</strong></h3>
+            Um desses elementos são os bancos de dados e servidores. 
+            O banco de dados é uma espécie de fonte de informações, onde as informações são armazenadas e podem ser acessadas pelos usuários.
+            Já o servidor é uma estrutura responsável por garantir a operação dos computadores.
+
+            <!--novamente um h3 que é um sub-item com strong-->
+            <h3><stong>Segurança de dados</stong></h3>
+            Em um universo totalmente digitalizado e cheio de inovações, os processos e dados de uma companhia são uma espécie de patrimônio corporativo com muito valor e que, infelizmente, podem ser alvos de ataques.
+            Ao desenvolver um back-end, o programador precisa seguir algumas diretrizes e boas práticas com base em um padrão de segurança, que garante confiança e proteção contra possíveis invasões, principalmente no que se refere aos roubos de dados.
+
+            <!--novamente um h3 que é um sub-item com strong-->
+            <h3><strong>Linguagens de programação</strong></h3>
+            A linguagem de programação é composta por termos usados em todas as etapas, desde o planejamento, construção das aplicações, implantação dos elementos até os procedimentos de manutenção da estrutura.
+            Como o servidor back-end é uma das partes mais importantes do site, é fundamental conhecer um pouco das linguagens de programação, como TypeScript, Java, Python, Node.js, entre outros, para te ajudar a compreender o funcionamento dos sistemas.
+            
+            <!--novamente um h3 que é um sub-item com strong-->
+            <h3><strong>APIs</strong></h3>
+            A API é a sigla para Application Programming Interface, que permite a comunicação entre sistemas com tecnologias diferentes a partir de uma linguagem que seja acessível e clara para todos os agentes envolvidos.
+            Os APIs servem para conectar bancos de dados, softwares, aplicações e serviços, utilizando um formato padrão de programação para facilitar as aplicações.
+        
+            <!--novamente um h3 que é um sub-item com strong-->
+            <h3><strong>Experiência e interface do usuário</strong></h3>
+            A experiência e a interface do usuário também fazem parte da estrutura backend. 
+            Quando um usuário acessa o site, por exemplo, ele observa se a plataforma é intuitiva, rápida e eficiente.
+            Sendo assim, toda essa estrutura de programação é importante para o bom desempenho das aplicações e a agilidade de cada elemento, o que pode agradar ou não um usuário em uma navegação online.
+            Aliás, a experiência do usuário é um dos cuidados mais importantes para lojas virtuais, que precisam garantir a preferência dos consumidores.
+            
+            <!--novamente um h3 que é um sub-item com strong-->
+            <h3><strong>O que é Linguagem Backend?</strong></h3>]
+            Como já falamos no tópico anterior, as linguagens backend são basicamente os termos usados para definir aplicações e ações dentro que são executadas dentro dos ambientes eletrônicos.
+
+            <!--novamente um h3 que é um sub-item com strong-->
+            <h3><strong>O Backend é essencial na Programação?</strong></h3>
+            A resposta é sim! O servidor backend é responsável por garantir o funcionamento do seu sistema no que se refere à estrutura, segurança e banco de dados, entre outras aplicações. 
+            Ou seja, sem esse tipo de aplicação, não é possível ter uma programação eficiente.
+        </p>
+    </div>
+
+     <!--Aqui coloquei um rodapé contendo informações de para contato, caso queira mais informações sobre o
+        curso desejado-->
+        <div class="footer">
+
+            <!--utilizei um h4 pois não ficaria tão grande e seria chamativo o suficiente-->
+            <h4>CONTATO:</h4>
+    
+            <!--a tag p serve ao próposito que queria para este texto, e o strong da um bom destaque-->
+            <p><strong>Caso queira entrar em contato para mais informações, abaixo segue os meios necessários:</strong></p>
+    
+            <!--o ul com um número de telefone, decidi usar o ul pois não queria os pontos de uma lista ordenada e seria
+                mais fácil manipular-->
+            <ul>Telefone: (19) 2345678</ul>
+    
+            <!--Aqui utilizei a tag a para chamar um texto clicável que direciona para o aplicativo de email, 
+                ao clicar neste email que coloquei, você será direcionado para o app de email que utiliza para entrar
+                em contato-->
+            <ul>Email: <a href= "mailto: astarote@gmail.com? subject=astarote@gmail.com">astarote@gmail.com</a></ul>
+            
+        </div>
+</body>
+</html>

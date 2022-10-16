@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--tag link para chamar os efeitos do CSS-->
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/textos.css">
+    <link rel="stylesheet" href=".//css/forms.css">
+
+    <!--tag link chamando uma imagem de ícone ao lado do título da página-->
+    <link rel="icon" href="./img/fundo.png">
+
+    <!--título da página-->
+    <title >DESENVOLVIMENTO DE SISTEMAS</title>
+</head>
+<body>
+    
+    <!--Aqui é um menu em formato DropDown, que direciona para as demais páginas do site-->
+    <nav>
+        <ul class="menu">
+
+            <!--lista ordenada que leva ao menu principal-->
+            <li><a href="./index.html">Home</a></li>
+
+            <!--lista ordenada que "segura" os sub-itens Cursos-->
+            <li>
+                <a href="#">Cursos &nabla;</a>
+                <ul class="dropdown-submenu">
+
+                    <!--cada lista aqui leva ao respectivo curso que a nomeia-->
+                    <li><a href="./cursoDesenvolvimento.html">Desenvolvimento de Sistemas</a></li>
+                    <li><a href="./cursoRedes.html">Redes de Computadores</a></li>
+                    <li><a href="./cursoADM.html">Administração</a></li>
+                    <li><a href="./cursoEletro.html">Eletroeletrônica</a></li>
+                </ul>
+            </li>
+
+            <!--aqui vem uma lista ordenada que "segura" os sub-itens do Artigos-->
+            <li>
+                <a href="#">Artigos &nabla;</a>
+                <ul class="dropdown-submenu">
+
+                    <!--cada lista aqui leva ao respectivo artigo que a nomeia-->
+                    <li><a href="./artigos_front-end.html">Front-end</a></li>
+                    <li><a href="./artigos_back-end.html">Back-end</a></li>
+                    <li><a href="./artigos_design.html">Design</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <!--Div para o texto explicando o que acontece no curso-->
+    <div class="texto">
+
+        <!--título do curso-->
+        <h1 id="tituloCurso">Desenvolvimento de sistemas</h1>
+
+        <!--aqui vem o texto em sí que explica o curso-->
+        <p>
+            Análise e desenvolvimento de sistemas é uma área responsável por analisar, desenvolver, analisar, projetar, implementar e atualizar sistemas de informação. Os profissionais da área geram softwares, que são executados em hardwares e operados por usuários diversos.
+            O curso não aborda apenas a utilização de aplicativos computacionais ou design de imagens e de sites mas, por outro lado, capacita o aluno a criar os programas que realizam essas tarefas, com a criação de programas e sistemas para jogos digitais para computadores e celulares, integração com sites
+            O técnico em desenvolvimento de sistemas forma profissionais capazes de desenvolver e programar sistemas computacionais, de acordo com normas e padrões de qualidade, integridade e segurança da informação. Também realiza a manutenção de programas de computador, análise de dados e linguagem de programação.
+            A duração do curso varia de acordo com o nível de formação do mesmo: 
+            
+            <!--lista ordenado com tópicos do texto-->
+           <li>Cursos de graduação: mínimo de 8 semestres;</li>  
+           <li>Cursos de Especialização: mínimo de 360 horas;</li>   
+           <li>Cursos de Aperfeiçoamento: mínimo de 180 horas.</li> 
+        </p>
+
+        <!--uma imagem meramente ilustrativa para complementar ao texto do curso-->
+        <img src="./img/imgDev.png" alt="Uma imagem da tela de um computador com códigos html">
+
+        <!--por achar mais bonito visualmente decidi colocar o botão que abre o modal com o formulário de inscrição
+        do curso na div do texto-->
+        <button class="abrir-modal" onclick="abrirModal()"><Strong>Inscreva-se</Strong></button>
+    </div>
+
+    
+    <!--modal que contém o formulário de inscrição-->
+    <div id="modal" class="bg-modal">
+        <div class="modal">
+
+            <!--tag responsável por fechar o modal-->
+            <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+
+            <!--título que fica dentro do modal, pertencente ao formulário respectivo ao curso que foi selecionado-->
+            <h1 id="titulo">Inscrição para curso de Desenvolvimento de Sistemas </h1>
+
+            <!--no formulário incui duas API's, uma para direcionar o dados preenchidos ao meu email, e outra
+                que utiliza o campo do CEP para preencher o endereço completo, com rua, cidade, estado, bairro. Para enviar
+                no meu email os dados do campos preciso inserir $ no name="" do campo que desejo.-->
+            <form action="https://api.staticforms.xyz/submit" method="post">
+
+                <!--Aqui coloco minha chave que foi gerada no site da API para faze-lá funcionar e enviar ao 
+                    meu email os dados-->
+                <input type="hidden" name="accessKey" value="dd3c2e06-3325-4954-9fa7-498d21b32154">
+
+                <!--aqui eu falo para depois que for enviado ao meu email os dados, retornar na página em que estava-->
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/cursoDesenvolvimento.html">
+
+                <!--utilizando a tag fieldset, consigo agrupar os elementos para manipular melhor no css-->
+                <fieldset class="grupo">
+
+                    <!--aqui é o campo de nome, separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                    <div id="divNome" class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="$nome" id="nome" required>
+                    </div>
+    
+                    <!--aqui é o campo de sobrenome, separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                    <div id="divSobrenome" class="campo">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text" name="$sobrenome" id="sobrenome" required>
+                    </div>
+
+                    <!--aqui é o campo de email, separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                    <div id="divEmail" class="campo">
+
+                        <!--por ele ser do tipo email, ele só aceita ser preenchido com um formato de email válido-->
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="$email" id="email" required>
+                    </div>
+                </fieldset>
+    
+                <!--aqui é o campo de gênero, no formato radiobox, separado em um div própria e com um requerido, 
+                    o $ no name="" é para a API que envia os dados ao meu email-->
+                <div id="divGen" class="campo">
+                    <label><Strong>Gênero</Strong></label>
+                    <label>
+                        <input type="radio" name="devweb" value="masculino">Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="devweb" value="feminino" checked>Feminino
+                    </label>
+                </div>
+
+                <!--aqui é o campo de data de Nascimento, por ser do tipo data, ele possui uma forma própria
+                    de ser preenchido, separado em um div própria e com um requerido, para torná-lo obrigatório, 
+                    o $ no name="" é para a API que envia os dados ao meu email-->
+                <div id="divNasc" class="campo">
+                    <label><Strong>Data de nascimento</Strong></label>
+                    <input type="date" name="$dt_nascimento" id="dt_nascimento" required>
+                </div>
+
+                <!--aqui é o campo de turno do tipo select, que serve como um array unidimensional que guarda
+                        os valores para serem selecionados, ele também tem uma opção vazia por questão estética
+                        e é separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                <div id="divTurno" class="campo">
+                    <label for="turno"><Strong>Turno</Strong></label>
+                    <select id="turno" name="$turno" required>
+                        <option selected disabled value="">Escolha...</option>
+                        <option>Matutino</option>
+                        <option>Vespertino</option>
+                        <option>Noturno</option>
+                    </select>
+                </div>
+
+                <!--utilizando a tag fieldset, consigo agrupar os elementos para manipular melhor no css-->
+                <fieldset>
+
+                    <!--aqui é o campo de CEP, separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                    <div id="divCEP" class="campo">
+                        <label for="cep"><Strong>CEP</Strong></label>
+                        <input type="text" name="$CEP" id="cep" required>
+                    </div>
+
+                    <!--aqui é o campo de endereço, separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                    <div id="divEndereco" class="campo">
+                        <label for="endereco"><Strong>Endereço</Strong></label>
+                        <input type="text" name="$endereco" id="endereco" required>
+                    </div>
+
+                    <!--aqui é o campo de número, separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                    <div id="divNum" class="campo">
+                        <label for="numero"><Strong>Número</Strong></label>
+                        <input type="text" name="$num" id="numero"  required>
+                    </div>
+                </fieldset>
+
+                <!--utilizando a tag fieldset, consigo agrupar os elementos para manipular melhor no css-->
+                <fieldset>
+
+                    <!--aqui é o campo de bairro, separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                    <div id="divBairro" class="campo">
+                        <label for="bairro"><Strong>Bairro</Strong></label>
+                        <input type="text" name="$bairro" id="bairro"  required>
+                    </div>
+
+                    <!--aqui é o campo de cidade, separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                    <div id="divCidade" class="campo">
+                        <label for="cidade"><Strong>Cidade</Strong></label>
+                        <input type="text" name="$cidade" id="cidade"  required>
+                    </div>
+
+                    <!--aqui é o campo de bairro, separado em um div própria e com um requerido, para
+                        torná-lo obrigatório, o $ no name="" é para a API que envia os dados ao meu email-->
+                    <div id="divEstado" class="campo">
+                        <label for="estado"><Strong>Estado</Strong></label>
+                        <input type="text" name="$estado" id="estado"  required>
+                    </div>
+                </fieldset>
+
+                <!--botão de submit que envia os dados do formulário para o meu email-->
+                <button class="botao" type="submit">Enviar</button>
+            </form>
+        </div>
+
+        
+    </div>
+    
+    <!--Aqui coloquei um rodapé contendo informações de para contato, caso queira mais informações sobre o
+        curso desejado-->
+    <div class="footer">
+
+        <!--utilizei um h4 pois não ficaria tão grande e seria chamativo o suficiente-->
+        <h4>CONTATO:</h4>
+
+        <!--a tag p serve ao próposito que queria para este texto, e o strong da um bom destaque-->
+        <p><strong>Caso queira entrar em contato para mais informações, abaixo segue os meios necessários:</strong></p>
+
+        <!--o ul com um número de telefone, decidi usar o ul pois não queria os pontos de uma lista ordenada e seria
+            mais fácil manipular-->
+        <ul>Telefone: (19) 2345678</ul>
+
+        <!--Aqui utilizei a tag a para chamar um texto clicável que direciona para o aplicativo de email, 
+            ao clicar neste email que coloquei, você será direcionado para o app de email que utiliza para entrar
+            em contato-->
+        <ul>Email: <a href= "mailto: astarote@gmail.com? subject=astarote@gmail.com">astarote@gmail.com</a></ul>
+        
+    </div>
+    
+</body>
+
+<!--Aqui chamei o script que é responsável pelo modal-->
+<script src="./js/modal.js"></script>
+
+<!--Aqui chamei o script que é resposável pela API-->
+<script src="./js/api.js"></script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--tag link para chamar os efeitos do CSS-->
+    <link rel="stylesheet" href="./css/dropdown.css">
+
+    <!--tag link chamando uma imagem de ícone ao lado do título da página-->
+    <link rel="icon" href="./img/fundo.png">
+
+    <!--título da página-->
+    <title>CURSOS</title>
+</head>
+<body>
+
+    <!--Aqui é um menu em formato DropDown, que direciona para as demais páginas do site-->
+    <nav>
+        <ul class="menu">
+
+            <!--lista ordenada que leva ao menu principal-->
+            <li><a href="./index.html">Home</a></li>
+
+            <!--lista ordenada que "segura" os sub-itens Cursos-->
+            <li>
+                <a href="#">Cursos &nabla;</a>
+                <ul class="dropdown-submenu">
+
+                    <!--cada lista aqui leva ao respectivo curso que a nomeia-->
+                    <li><a href="./cursoDesenvolvimento.html">Desenvolvimento de Sistemas</a></li>
+                    <li><a href="./cursoRedes.html">Redes de Computadores</a></li>
+                    <li><a href="./cursoADM.html">Administração</a></li>
+                    <li><a href="./cursoEletro.html">Eletroeletrônica</a></li>
+                </ul>
+            </li>
+
+            <!--aqui vem uma lista ordenada que "segura" os sub-itens do Artigos-->
+            <li>
+                <a href="#">Artigos &nabla;</a>
+                <ul class="dropdown-submenu">
+
+                    <!--cada lista aqui leva ao respectivo artigo que a nomeia-->
+                    <li><a href="./artigos_front-end.html">Front-end</a></li>
+                    <li><a href="./artigos_back-end.html">Back-end</a></li>
+                    <li><a href="./artigos_design.html">Design</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+</body>
+</html>
