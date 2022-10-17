@@ -75,7 +75,7 @@ mudando seu dimensionamento, colocando sombra e dando um posicionamento para ele
 /*com o hover no botão que abre o modal, eu estou dando um tratamento, para toda vez que passar o mouse por cima dele
 a sua cor ira mudar, para um tom mais claro de azul*/
 .abrir-modal:hover{
-    background: rgba(96, 166, 231, 0.9);
+    background: rgb(135, 159, 189);
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }

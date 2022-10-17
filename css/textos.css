@@ -43,6 +43,13 @@ a fonte que deverá ser usada em toda div footer*/
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
+/*aqui utilizei do hover para dar uma interação a mais do usuário com a tela, pois sempre que ele posicionar o mouse
+sobre o rodapé da página, está irá mudar sua cor e colocar uma sombra para todos os textos destacando um pouco*/
+.footer:hover{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgb(135, 159, 189);
+}
+
 /*alinhei o título do h4 para o centro da página*/
 .footer h4{
     

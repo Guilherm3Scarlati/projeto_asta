@@ -71,12 +71,11 @@ deixam como "tópicos"*/
 
 }
 
-/*resolvi colocar a imagem de fundo pelo css pois assim ficaria mais facil dar manuntenção futuramente*/
+/*aqui coloquei um degradê para o bg pois achei que ficaria melhor visualmente, do que uma imagem*/
 body {
-    background-image: url("/img/fundo.png");
-    background-size: cover;
+    
     background-position: 0 20%;
-    /* background-image: linear-gradient(to bottom, rgb(234, 224, 233), rgba(238, 41, 189, 0.983)); degrade de cor do site*/
+    background-image: linear-gradient(to bottom, rgb(135, 159, 189), rgba(69, 135, 197, 0.983)); /*degrade de cor do site*/
     background-attachment: fixed;
 }
 
